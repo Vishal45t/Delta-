@@ -53,7 +53,7 @@ module.exports.editListing = async (req, res) => {
   res.render("listings/edit.ejs", { listing });
 }; 
 
-module.exports.editListing = async (req, res) => {
+module.exports.updateListing = async (req, res) => {
             if(!req.body.listing){
         throw new ExpressError(400,"Enter Valid listing");
     }
